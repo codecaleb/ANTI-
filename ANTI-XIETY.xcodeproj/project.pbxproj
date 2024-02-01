@@ -14,6 +14,11 @@
 		40DA8D7F2B62F7860022459B /* ANTI_XIETYTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DA8D7E2B62F7860022459B /* ANTI_XIETYTests.swift */; };
 		40DA8D892B62F7860022459B /* ANTI_XIETYUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DA8D882B62F7860022459B /* ANTI_XIETYUITests.swift */; };
 		40DA8D8B2B62F7860022459B /* ANTI_XIETYUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DA8D8A2B62F7860022459B /* ANTI_XIETYUITestsLaunchTests.swift */; };
+		40DA8D9A2B67F1780022459B /* SheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DA8D992B67F1780022459B /* SheetView.swift */; };
+		40DA8D9D2B6AE6800022459B /* ViewA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DA8D9C2B6AE6800022459B /* ViewA.swift */; };
+		40DA8D9F2B6AE6E20022459B /* ViewB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DA8D9E2B6AE6E20022459B /* ViewB.swift */; };
+		40DA8DA12B6AE6EE0022459B /* ViewC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DA8DA02B6AE6EE0022459B /* ViewC.swift */; };
+		40DA8DA32B6AEAD00022459B /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DA8DA22B6AEAD00022459B /* TaskView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +50,11 @@
 		40DA8D842B62F7860022459B /* ANTI-XIETYUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ANTI-XIETYUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		40DA8D882B62F7860022459B /* ANTI_XIETYUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ANTI_XIETYUITests.swift; sourceTree = "<group>"; };
 		40DA8D8A2B62F7860022459B /* ANTI_XIETYUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ANTI_XIETYUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		40DA8D992B67F1780022459B /* SheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetView.swift; sourceTree = "<group>"; };
+		40DA8D9C2B6AE6800022459B /* ViewA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewA.swift; sourceTree = "<group>"; };
+		40DA8D9E2B6AE6E20022459B /* ViewB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewB.swift; sourceTree = "<group>"; };
+		40DA8DA02B6AE6EE0022459B /* ViewC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewC.swift; sourceTree = "<group>"; };
+		40DA8DA22B6AEAD00022459B /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +106,10 @@
 			isa = PBXGroup;
 			children = (
 				40DA8D6C2B62F7840022459B /* ANTI_XIETYApp.swift */,
+				40DA8D9B2B6AE4E10022459B /* Views */,
 				40DA8D6E2B62F7840022459B /* ContentView.swift */,
+				40DA8DA22B6AEAD00022459B /* TaskView.swift */,
+				40DA8D992B67F1780022459B /* SheetView.swift */,
 				40DA8D702B62F7860022459B /* Assets.xcassets */,
 				40DA8D722B62F7860022459B /* ANTI_XIETY.entitlements */,
 				40DA8D732B62F7860022459B /* Preview Content */,
@@ -127,6 +140,16 @@
 				40DA8D8A2B62F7860022459B /* ANTI_XIETYUITestsLaunchTests.swift */,
 			);
 			path = "ANTI-XIETYUITests";
+			sourceTree = "<group>";
+		};
+		40DA8D9B2B6AE4E10022459B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				40DA8D9C2B6AE6800022459B /* ViewA.swift */,
+				40DA8D9E2B6AE6E20022459B /* ViewB.swift */,
+				40DA8DA02B6AE6EE0022459B /* ViewC.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +283,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				40DA8D6F2B62F7840022459B /* ContentView.swift in Sources */,
+				40DA8DA32B6AEAD00022459B /* TaskView.swift in Sources */,
+				40DA8D9F2B6AE6E20022459B /* ViewB.swift in Sources */,
+				40DA8D9A2B67F1780022459B /* SheetView.swift in Sources */,
+				40DA8D9D2B6AE6800022459B /* ViewA.swift in Sources */,
+				40DA8DA12B6AE6EE0022459B /* ViewC.swift in Sources */,
 				40DA8D6D2B62F7840022459B /* ANTI_XIETYApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
