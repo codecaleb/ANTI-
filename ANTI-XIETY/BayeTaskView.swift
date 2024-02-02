@@ -8,6 +8,111 @@ import SwiftUI
 
 struct BayeTaskView: View {
     var body: some View {
+        NavigationStack {
+            
+                ZStack{
+                    Color(.black)
+                        .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                    
+                    VStack{
+                        NavigationLink("Task") {
+                        TaskView()
+                        }
+                        
+                        ScrollView {
+                       
+                            Image("Anti")
+                                .scaleEffect(CGSize(width: 1.0, height: 1.0))
+                                .padding()
+                            HStack{
+                                Image("Smiley 1").resizable().scaledToFit().frame(width: 70)
+                                Image("Smiley 2").resizable().scaledToFit().frame(width: 70)
+                                Image("Smiley 3").resizable().scaledToFit().frame(width: 70)
+                                Image("Smiley 4").resizable().scaledToFit().frame(width: 70)
+                                Image("Smiley 5").resizable().scaledToFit().frame(width: 70)
+                            }
+                                .padding()
+//                                .padding()
+//                                .padding()
+//                                .padding()
+
+                            
+                            VStack {
+                                Text ("Tasks")
+                                    .position(x: -120, y: 0)
+                                    .foregroundColor(.lightBlue)
+                                    .bold()
+                                    .frame(width: 50)
+                                
+                                Group {
+                                    Button {
+                                        
+                                    } label: {
+                                        Text("Go on a walk with your pet")
+                                        
+                                    }
+                                    .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                                    .padding()
+                                    .font(.system(size: 19))
+                                    .foregroundColor(.white)
+                                    .background(.lightBlue)
+                                    .clipShape(RoundedRectangle(cornerRadius: 15))
+                                    
+                                    Button("Take slow deep breaths") {
+                                    }
+                                    .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                                    .padding()
+                                    .font(.system(size: 19))
+                                    .foregroundColor(.white)
+                                    .background(.lightBlue)
+                                    .clipShape(RoundedRectangle(cornerRadius: 15))
+                                    
+                                    
+                                    Button("Try Meditating    ") {
+                                    }
+                                    .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                                    .padding()
+                                    .font(.system(size: 19))
+                                    .foregroundColor(.white)
+                                    .background(.lightBlue)
+                                    .clipShape(RoundedRectangle(cornerRadius: 15))
+                                    
+                                    
+                                    Button("Complete a 30 minute yoga session") {
+                                    }
+                                    .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                                    .padding()
+                                    .font(.system(size: 17))
+                                    .foregroundColor(.white)
+                                    .background(.lightBlue)
+                                    .clipShape(RoundedRectangle(cornerRadius: 10))
+                                    
+                                    
+                                    Button("Try Journaling your emotions") {
+                                    }
+                                    .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                                    .padding()
+                                    .font(.system(size: 16))
+                                    .foregroundColor(.white)
+                                    .background(.lightBlue)
+                                    .clipShape(RoundedRectangle(cornerRadius: 15))
+                                }
+                                .padding()
+                                
+                            }
+                            
+                            
+                            Color("White")
+                                .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    var body: some View {
         ZStack{
             Color("White")
                 .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
@@ -68,7 +173,7 @@ struct BayeTaskView: View {
             }
         }
     }
-}
+
 
 #Preview {
     BayeTaskView()
