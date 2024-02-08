@@ -12,12 +12,12 @@ struct TabsView: View {
         TabView {
             BayeTaskView()
                 .tabItem {
-                    Label("BayeView", systemImage: "star")
+                    Label("Home", systemImage: "house")
                 }
             
             ContentView()
                 .tabItem {
-                    Label("ContentView", systemImage: "star")
+                    Label("leaderboard", systemImage: "trophy")
                 }
             
         }

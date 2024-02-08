@@ -10,14 +10,11 @@ struct BayeTaskView: View {
     var body: some View {
         NavigationStack {
             
-                ZStack{
-                    Color(.black)
+            ZStack{
+                    Color(.white)
                         .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
                     
                     VStack{
-                        NavigationLink("Task") {
-                        TaskView()
-                        }
                         
                         ScrollView {
                        
@@ -38,53 +35,67 @@ struct BayeTaskView: View {
 
                             
                             VStack {
-                                Text ("Tasks")
-                                    .position(x: -120, y: 0)
-                                    .foregroundColor(.lightBlue)
-                                    .bold()
-                                    .frame(width: 50)
                                 
                                 Group {
                                     Button {
                                         
                                     } label: {
-                                        Text("Go on a walk with your pet")
-                                        
+                                        NavigationLink("Go on a walk with your pet") {
+                                            TaskView()
+                                        }
+                                        Text("")
                                     }
                                     .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
                                     .padding()
                                     .font(.system(size: 19))
                                     .foregroundColor(.white)
                                     .background(.lightBlue)
+                                    .fontDesign(.rounded)
+                                    .font(.system(size: 19))
+                                    .fontWeight(.heavy)
                                     .clipShape(RoundedRectangle(cornerRadius: 15))
+                                                        
                                     
-                                    Button("Take slow deep breaths") {
+                                    Button {} label: {
+                                        NavigationLink("Get lost in a story") {
+                                            TaskView()
+                                        }
+                                        Text("")
                                     }
                                     .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
                                     .padding()
                                     .font(.system(size: 19))
                                     .foregroundColor(.white)
                                     .background(.lightBlue)
+                                    .fontDesign(.rounded)
+                                    .font(.system(size: 19))
+                                    .fontWeight(.heavy)
                                     .clipShape(RoundedRectangle(cornerRadius: 15))
                                     
                                     
-                                    Button("Try Meditating    ") {
+                                    Button("Complete a meditation activity") {
                                     }
                                     .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
                                     .padding()
                                     .font(.system(size: 19))
                                     .foregroundColor(.white)
                                     .background(.lightBlue)
+                                    .fontDesign(.rounded)
+                                    .font(.system(size: 19))
+                                    .fontWeight(.heavy)
                                     .clipShape(RoundedRectangle(cornerRadius: 15))
                                     
                                     
-                                    Button("Complete a 30 minute yoga session") {
+                                    Button("Complete a yoga session") {
                                     }
                                     .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
                                     .padding()
                                     .font(.system(size: 17))
                                     .foregroundColor(.white)
                                     .background(.lightBlue)
+                                    .fontDesign(.rounded)
+                                    .font(.system(size: 19))
+                                    .fontWeight(.heavy)
                                     .clipShape(RoundedRectangle(cornerRadius: 10))
                                     
                                     
@@ -95,6 +106,9 @@ struct BayeTaskView: View {
                                     .font(.system(size: 16))
                                     .foregroundColor(.white)
                                     .background(.lightBlue)
+                                    .fontDesign(.rounded)
+                                    .font(.system(size: 19))
+                                    .fontWeight(.heavy)
                                     .clipShape(RoundedRectangle(cornerRadius: 15))
                                 }
                                 .padding()
