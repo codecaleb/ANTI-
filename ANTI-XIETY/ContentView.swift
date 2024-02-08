@@ -1,43 +1,28 @@
 //
-//  ContentView.swift
+//  TabView.swift
 //  ANTI-XIETY
 //
-//  Created by Caleb Goode on 1/25/24.
+//  Created by Baye Hanne on 2/1/24.
 //
 
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack{
-            VStack {
-                
-                Text("You are in 16th place, try harder")
-                    .foregroundStyle(.black)
-                    .font(.system(size: 15))
-                    .frame(alignment: .top)
-                Image("Leaderboard")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width:300.0, height:65.0)
-                Image("gold")
-            }
+        TabView {
+            BayeTaskView()
+                .tabItem {
+                    Label("Home", systemImage: "house")
+                }
             
-            HStack {
-                Image("silver")
-               
-                Image("bronze2")
-               
-             
-                
-            }
+            LeaderboardView()
+                .tabItem {
+                    Label("leaderboard", systemImage: "trophy")
+                }
+            
         }
-        
     }
-    
-    
-   
-    }
+}
 
 #Preview {
     ContentView()
