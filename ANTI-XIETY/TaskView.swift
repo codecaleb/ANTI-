@@ -18,12 +18,15 @@ struct TaskView: View {
         }
         HStack {
             Text("Benefits")
+                .foregroundStyle(.lightBlue.gradient)
+                .bold()
                 .multilineTextAlignment(.center)
            
             
                  }
         VStack {
             Text(" Engaging in physical activity causes the brain to release endorphins, which give you energy and happy emotions.")
+                .bold()
                 .multilineTextAlignment(.center)
         }
         Button {
