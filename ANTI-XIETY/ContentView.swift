@@ -19,10 +19,6 @@ struct ContentView: View {
                 .tabItem {
                     Label("leaderboard", systemImage: "trophy")
                 }
-            AddTaskView()
-                .tabItem {
-                    Label("leaderboard", systemImage: "trophy")
-                }
             
         }
     }

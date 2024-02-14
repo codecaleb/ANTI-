@@ -54,6 +54,7 @@ struct BayeTaskView: View {
                                 .clipShape(RoundedRectangle(cornerRadius: 15))
                                 
                                 
+                                
                                 Button {} label: {
                                     NavigationLink("Get lost in a story") {
                                         StoryView()
