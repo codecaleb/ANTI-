@@ -24,6 +24,9 @@
 		E2A1371C2B76B90400975E2F /* MeditationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A1371B2B76B90400975E2F /* MeditationView.swift */; };
 		E2A1371E2B76BB3600975E2F /* YogaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A1371D2B76BB3600975E2F /* YogaView.swift */; };
 		E2A137202B76BBF600975E2F /* JournalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A1371F2B76BBF600975E2F /* JournalView.swift */; };
+		E2A137222B7D65B800975E2F /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A137212B7D65B800975E2F /* SwiftUIView.swift */; };
+		E2A137242B7D65D600975E2F /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A137232B7D65D600975E2F /* TimerView.swift */; };
+		E2A137262B7D679C00975E2F /* OUR CUTE COIN.png in Resources */ = {isa = PBXBuildFile; fileRef = E2A137252B7D679C00975E2F /* OUR CUTE COIN.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +68,9 @@
 		E2A1371B2B76B90400975E2F /* MeditationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationView.swift; sourceTree = "<group>"; };
 		E2A1371D2B76BB3600975E2F /* YogaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YogaView.swift; sourceTree = "<group>"; };
 		E2A1371F2B76BBF600975E2F /* JournalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalView.swift; sourceTree = "<group>"; };
+		E2A137212B7D65B800975E2F /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		E2A137232B7D65D600975E2F /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		E2A137252B7D679C00975E2F /* OUR CUTE COIN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "OUR CUTE COIN.png"; path = "../../../Downloads/OUR CUTE COIN.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +124,8 @@
 				40DA8D6C2B62F7840022459B /* ANTI_XIETYApp.swift */,
 				40DA8D9B2B6AE4E10022459B /* Views */,
 				E2A136FD2B6C4A8B00975E2F /* ContentView.swift */,
+				E2A137212B7D65B800975E2F /* SwiftUIView.swift */,
+				E2A137232B7D65D600975E2F /* TimerView.swift */,
 				40DA8D6E2B62F7840022459B /* LeaderboardView.swift */,
 				E2A136F92B6C472C00975E2F /* BayeTaskView.swift */,
 				40DA8DA22B6AEAD00022459B /* TaskView.swift */,
@@ -151,6 +159,7 @@
 		40DA8D872B62F7860022459B /* ANTI-XIETYUITests */ = {
 			isa = PBXGroup;
 			children = (
+				E2A137252B7D679C00975E2F /* OUR CUTE COIN.png */,
 				40DA8D882B62F7860022459B /* ANTI_XIETYUITests.swift */,
 				40DA8D8A2B62F7860022459B /* ANTI_XIETYUITestsLaunchTests.swift */,
 			);
@@ -287,6 +296,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2A137262B7D679C00975E2F /* OUR CUTE COIN.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +307,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2A137242B7D65D600975E2F /* TimerView.swift in Sources */,
+				E2A137222B7D65B800975E2F /* SwiftUIView.swift in Sources */,
 				E2A1371A2B76B65B00975E2F /* StoryView.swift in Sources */,
 				E2A136FE2B6C4A8B00975E2F /* ContentView.swift in Sources */,
 				E2A1371C2B76B90400975E2F /* MeditationView.swift in Sources */,

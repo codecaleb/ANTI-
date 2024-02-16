@@ -39,7 +39,7 @@ struct BayeTaskView: View {
                                     
                                 } label: {
                                     NavigationLink("Go on a walk with your pet") {
-                                        TaskView()
+                                        SwiftUIView()
                                     }
                                     Text("")
                                 }
@@ -55,12 +55,11 @@ struct BayeTaskView: View {
                                 
                                 
                                 
-                                Button {} label: {
+    
                                     NavigationLink("Get lost in a story") {
                                         StoryView()
                                     }
-                                    Text("")
-                                }
+                                
                                 .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
                                 .padding()
                                 .font(.system(size: 19))
@@ -97,7 +96,7 @@ struct BayeTaskView: View {
                                     .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
                                     .padding()
                                     .font(.system(size: 17))
-                                    .foregroundColor(.white)
+                                    .foregroundColor(Color.white)
                                     .background(.lightBlue)
                                     .fontDesign(.rounded)
                                     .font(.system(size: 19))
@@ -125,7 +124,7 @@ struct BayeTaskView: View {
                             }
                             
                             
-                            Color("White")
+                        Color.white
                                 .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
                             
                         }

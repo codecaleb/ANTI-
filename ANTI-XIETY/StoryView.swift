@@ -10,6 +10,8 @@ import SwiftUI
 struct StoryView: View {
     var body: some View {
         VStack {
+            Color("lightBlue")
+            ignoresSafeArea()
             Image(systemName: "book")
                 .resizable()
                 .aspectRatio(contentMode: .fit)

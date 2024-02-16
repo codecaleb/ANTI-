@@ -13,9 +13,10 @@ struct ContentView: View {
             BayeTaskView()
                 .tabItem {
                     Label("Home", systemImage: "house")
+                   
                 }
             
-            LeaderboardView()
+            LeaderBoardView()
                 .tabItem {
                     Label("leaderboard", systemImage: "trophy")
                 }
