@@ -16,6 +16,9 @@ struct BayeTaskView: View {
                     
                     ScrollView {
                         
+                        Spacer()
+                        Spacer()
+
                         Image("Anti")
                             .scaleEffect(CGSize(width: 1.0, height: 1.0))
                             .padding()
@@ -27,11 +30,17 @@ struct BayeTaskView: View {
                             Image("Smiley 5").resizable().scaledToFit().frame(width: 70)
                         }
                         .padding()
+                        Spacer()
+                        Spacer()
                         //                                .padding()
                         //                                .padding()
                         //                                .padding()
                         
-                        
+                        Spacer()
+                        Spacer()
+                        Spacer()
+                        Spacer()
+
                         VStack {
                             
                             Group {
@@ -41,7 +50,7 @@ struct BayeTaskView: View {
                                     NavigationLink("Go on a walk with your pet") {
                                         SwiftUIView()
                                     }
-                                    Text("")
+                                    
                                 }
                                 .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
                                 .padding()
@@ -121,7 +130,9 @@ struct BayeTaskView: View {
                                 }
                                 .padding()
                                 
-                            }
+                        }
+                        Spacer()
+                        
                             
                             
                         Color.white

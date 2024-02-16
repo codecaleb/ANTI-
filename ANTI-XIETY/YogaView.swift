@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct YogaView: View {
+    @State var shouldPresentSheet = false
     var body: some View {
         VStack {
             Image(systemName: "figure.yoga")
@@ -18,7 +19,7 @@ struct YogaView: View {
         }
         HStack {
             Text("Benefits:")
-                .foregroundStyle(.green.gradient)
+                .foregroundStyle(.lightBlue)
                 .bold()
                 .multilineTextAlignment(.center)
            
@@ -26,10 +27,26 @@ struct YogaView: View {
                  }
 
             VStack {
-                Text(" The slow rhythmic breathing practices and meditative/ relaxation practices of yoga are designed to induce a sense of calm, well-being, stress tolerance, and mental focus, all of which may minimize depression, anxiety, stress, and rumination. ")
+                Text(" Time yourself and hold the tree pose for as long as you can ")
                     .bold()
                     .multilineTextAlignment(.center)
             } 
+        VStack {
+            Button {
+                shouldPresentSheet.toggle()
+            } label: {
+                Image("timer")
+                    .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width:300.0, height:200.0)
+                                .frame(alignment: .top)
+            }
+            .sheet(isPresented: $shouldPresentSheet) {
+            } content: {
+                               TimerView()
+                           }
+            
+        }
     }
 }
 

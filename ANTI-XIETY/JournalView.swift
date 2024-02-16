@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct JournalView: View {
+    @State var shouldPresentSheet = false
     var body: some View {
         VStack {
             Image(systemName: "pencil.and.scribble")
@@ -18,18 +19,35 @@ struct JournalView: View {
         }
         HStack {
             Text("Benefits:")
-                .foregroundStyle(.orange.gradient)
+                .foregroundStyle(.lightBlue)
                 .bold()
                 .multilineTextAlignment(.center)
-           
             
-                 }
-
-            VStack {
-                Text(" The slow rhythmic breathing practices and meditative/ relaxation practices of yoga are designed to induce a sense of calm, well-being, stress tolerance, and mental focus, all of which may minimize depression, anxiety, stress, and rumination. ")
-                    .bold()
-                    .multilineTextAlignment(.center)
-            }     }
+            
+        }
+        
+        VStack {
+            Text(" Notate how you feel at the moment. Let your feelings flow into the writing utensil.")
+                .bold()
+                .multilineTextAlignment(.center)
+        }
+        VStack {
+            Button {
+                shouldPresentSheet.toggle()
+            } label: {
+                Image("timer")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width:300.0, height:200.0)
+                    .frame(alignment: .top)
+            }
+            .sheet(isPresented: $shouldPresentSheet) {
+            } content: {
+                TimerView()
+            }
+            
+        }
+    }
 }
 
 #Preview {

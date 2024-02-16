@@ -25,7 +25,7 @@ struct TaskView: View {
             
                  }
         VStack {
-            Text(" Engaging in physical activity causes the brain to release endorphins, which give you energy and happy emotions.")
+            Text(" Take your dog for a 15 minute walkEngaging in physical activity causes the brain to release endorphins, which give you energy and happy emotions.")
                 .bold()
                 .multilineTextAlignment(.center)
         }

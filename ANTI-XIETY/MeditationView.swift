@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct MeditationView: View {
+    @State var shouldPresentSheet = false
     var body: some View {
         VStack {
             Image(systemName: "peacesign")
@@ -18,7 +19,7 @@ struct MeditationView: View {
         }
         HStack {
             Text("Benefits:")
-                .foregroundStyle(.red.gradient)
+                .foregroundStyle(.lightBlue)
                 .bold()
                 .multilineTextAlignment(.center)
            
@@ -26,10 +27,26 @@ struct MeditationView: View {
                  }
 
             VStack {
-                Text(" Focusing your attention is one of the most important elements of meditation. Focusing your attention is what helps free your mind from the many things that cause stress and worry. ")
+                Text(" Take slow deep breaths for 60 seconds to free your mind.")
                     .bold()
                     .multilineTextAlignment(.center)
             }
+        VStack {
+            Button {
+                shouldPresentSheet.toggle()
+            } label: {
+                Image("timer")
+                    .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width:300.0, height:200.0)
+                                .frame(alignment: .top)
+            }
+            .sheet(isPresented: $shouldPresentSheet) {
+            } content: {
+                               TimerView()
+                           }
+            
+        }
         
             }
 }
